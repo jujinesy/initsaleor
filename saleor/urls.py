@@ -21,6 +21,8 @@ from .product.urls import urlpatterns as product_urls
 from .search.urls import urlpatterns as search_urls
 
 handler404 = 'saleor.core.views.handle_404'
+import sys
+print (sys.path)
 
 non_translatable_urlpatterns = [
     url(r'^dashboard/',

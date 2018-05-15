@@ -13,6 +13,7 @@ def get_list(text):
 
 
 DEBUG = ast.literal_eval(os.environ.get('DEBUG', 'True'))
+print (DEBUG)
 
 SITE_ID = 1
 
@@ -27,7 +28,7 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-INTERNAL_IPS = get_list(os.environ.get('INTERNAL_IPS', '127.0.0.1')) # DEBUG_TOOLBAR_CONFIG로 무력화가능 
+INTERNAL_IPS = get_list(os.environ.get('INTERNAL_IPS', '127.0.0.1')) # DEBUG_TOOLBAR_CONFIG로 무력화가능
 
 CACHES = {'default': django_cache_url.config()}
 
